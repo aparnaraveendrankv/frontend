@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplier List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="mb-4">Supplier List</h1>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        Filters
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="categoryFilter">Category:</label>
+                                <select id="categoryFilter" class="form-control">
+                                    <option value="all">All Categories</option>
+                                    <option value="electronics">Oxygen</option>
+                                    <option value="clothing">Bed</option>
+                                    <option value="food">Food</option>
+                        
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="channelFilter">Channel:</label>
+                                <select id="channelFilter" class="form-control">
+                                    <option value="all">All Channels</option>
+                                    <option value="online">Twiter</option>
+                                    <option value="retail">Facebook</option>
+                                    <option value="wholesale">Instagran</option>
+                             
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="stateFilter">State:</label>
+                                <select id="stateFilter" class="form-control">
+                                    <option value="all">All States</option>
+                                    <option value="delhi">delhi</option>
+                                    <option value="tn">TamilNadu</option>
+                                    <option value="rajasthan">Rajasthan</option>
+                                    <!-- Add more options as needed -->
+                                </select>
+                            </div>
+                            <button id="applyFilters" class="btn btn-primary">Apply Filters</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        Supplier List
+                    </div>
+                    <div class="card-body">
+                        <div id="supplierList"></div>
+                    </div>
+                    <div class="card-footer">
+                        <button id="prevPage" class="btn btn-secondary" disabled>Previous Page</button>
+                        <button id="nextPage" class="btn btn-primary">Next Page</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Sorting
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="sort">Sort by Source Time:</label>
+                                <select id="sort" class="form-control">
+                                    <option value="asc">Ascending</option>
+                                    <option value="desc">Descending</option>
+                                </select>
+                            </div>
+                            <button id="applySort" class="btn btn-primary">Apply Sort</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
